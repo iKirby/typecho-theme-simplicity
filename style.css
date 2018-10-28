@@ -209,6 +209,7 @@ input.button:hover,input.submit:hover {
 }
 
 .alert {
+    margin: 1em 0;
     padding: 4px 8px;
     border-radius: 0
 }
