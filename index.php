@@ -4,7 +4,7 @@
  * 
  * @package Simplicity
  * @author iKirby
- * @version 1.1
+ * @version 1.2
  * @link https://ikirby.me
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
