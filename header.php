@@ -11,7 +11,7 @@
 		), '', ' | '); ?><?php $this->options->title(); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>?v=1810152014">
+	<link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>?v=20200101">
 	<?php $this->header("generator=&template=&pingback=&xmlrpc=&wlw="); ?>
 </head>
 <body>
