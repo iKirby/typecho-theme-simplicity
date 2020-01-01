@@ -33,7 +33,7 @@ body {
     font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
     font-size: 16px;
     color: #39434d;
-    letter-spacing: .5px
+    letter-spacing: .3px
 }
 
 #container {
@@ -95,7 +95,8 @@ li {
 }
 
 p {
-    margin: .7em 0
+    margin: 1em 0;
+    line-height: 1.7;
 }
 
 h3 {
