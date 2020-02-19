@@ -177,10 +177,13 @@ nav a {
     font-size: 12px
 }
 
-input,textarea {
+input, textarea {
     padding: 5px 0;
     font-family: inherit;
     font-size: 15px;
+}
+
+input:not([type='button']):not([type='submit']), textarea {
     border-bottom: 1px solid #d8dadc
 }
 
@@ -190,7 +193,7 @@ textarea {
     resize: vertical
 }
 
-input:focus,textarea:focus {
+input:not([type='button']):not([type='submit']):focus,textarea:focus {
     border-bottom: 1px solid #a4a9ad
 }
 
@@ -289,7 +292,6 @@ span.user cite,span.user cite a {
 
 .comment-list p {
     display: inline;
-    margin-bottom: 0
 }
 
 .comment-list p.comment-user-info {
@@ -329,5 +331,130 @@ span.user cite,span.user cite a {
 
     input#author,input#mail {
         margin-bottom: .5em
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #212121;
+        color: #f0f2f4
+    }
+
+    header {
+        padding: .3em 0;
+        border-bottom: 1px solid #798086
+    }
+
+    header a {
+        color: #dae6f1
+    }
+    
+    header a:hover {
+        color: #b8c0c7
+    }
+    
+    a {
+        color: #cbcdcd
+    }
+
+    #footer a:hover,.post a:hover {
+        color: #f1f2f4;
+        border-bottom: 1px solid #f1f2f4
+    }
+
+    .post-meta,.post-meta a {
+        color: #a9b3bc
+    }
+
+    blockquote {
+        color: #bbbfc3;
+        border-left: 4px solid #aeb3b7
+    }
+    
+    .post-content a {
+        border-bottom: 1px solid #cbcdcd
+    }
+    
+    .post-content hr {
+        border: 1px solid #434d56
+    }
+
+    code,kbd,tt,var {
+        color: #f5899d;
+        background: #39392d
+    }
+    
+    pre {
+        background: #39392d
+    }
+
+    .pagenav a:hover {
+        background-color: #f1f2f4;
+        color: #333
+    }
+
+    input:not([type='button']):not([type='submit']), textarea {
+        color: #fff;
+        background-color: #212121;
+        border-bottom: 1px solid #798086
+    }
+
+    input:not([type='button']):not([type='submit']):focus,textarea:focus {
+        border-bottom: 1px solid #c9cccf
+    }
+    
+    input.button,input.submit {
+        color: #212121;
+        background-color: #bcc0c2;
+    }
+
+    input.button:hover,input.submit:hover {
+        background-color: #a3a6a8
+    }
+
+    .success {
+        color: #62eaa6;
+        border: 1px solid #62eaa6
+    }
+    
+    .info {
+        color: #88b4f6;
+        border: 1px solid #88b4f6
+    }
+    
+    .warning {
+        color: #fed681;
+        border: 1px solid #fed681
+    }
+    
+    .danger {
+        color: #e78c7e;
+        border: 1px solid #e78c7e
+    }
+
+    #comments a:hover {
+        color: #f1f2f4;
+        border-bottom: 1px solid #f1f2f4
+    }
+
+    li.comment-parent {
+        border-top: 1px dashed #555
+    }
+
+    span.comment-author cite,span.comment-author cite a {
+        color: #acb4b9
+    }
+    
+    span.author cite,span.author cite a {
+        color: #9fb1c6
+    }
+    
+    span.user cite,span.user cite a {
+        color: #96acb6
+    }
+
+    .cancel-comment-reply a:hover,.comment-reply a:hover {
+        background-color: #f1f2f4;
+        color: #333!important
     }
 }
